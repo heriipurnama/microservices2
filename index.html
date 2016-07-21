@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>microservice</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section id="transitions">
+					<h4>Aplikasi Pengelolaan Skripsi Di STMIK AKAKOM Menggunakan Arsitektur Microservice
+					  Dengan Node.js</h4>
+					<h3> </h3>
+					<p>
+						Penulis:
+						1). Heri Purnama <br>
+						2). Indra Yatini B. S.Kom., M.Kom <br>
+						- <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">2016</a> -
+						<br/>- <a href="?transition=convex#/transitions">Mulai </a> -
+					</p>
+				</section>
+				<section>
+					<h3>Pendahuluan</h3>
+					<ul>
+						<li>Latar Belakang</li>
+						<p>Mengambil judul dan isi Skripsi yang sama dengan yang sudah dibuat oleh Mahasiswa STMIK AKAKOM YOGYAKARTA pada tahun-tahun yang sudah berlalu kemudian mempresentasikan lagi dihadapan Dosen Penguji untuk dijadikan sebagai Skripsinya.</p>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>Rumusan Masalah</li>
+						1. Bagaimana membangun Aplikasi penyajian data skripsi secara  akurat berdasarkan judul yang telah dibuat dari tahun-tahun yang sudah berlalu pembuat skripsi, dan menyajikan data skripsi berdasarkan tahun berapa skripsi itu dibuat.<br>
+						2. Bagaimana membangun Aplikasi pengelolaan skripsi dengan menggunakan Arsitektur Microservice dan perangkat lunak Node.js.
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h3>Tinjauan Pustaka Dan Dasar Teori</h3>
+							<img src="./images/t1.png" height="600px">
+					</section>
+					<section>
+						<img src="./images/t2.png" height="600px">
+					</section>	
+				</section>
+				<section>
+				<section>
+					<h3>Analisis dan Perancangan Sistem</h3>
+					<ul>
+						<li>Use case</li>
+						<img src="./images/u1.png" height="560px">
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>Skema Microservice</li>
+						<img src="./images/u4.png" height="560px">
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>Skema Private cloud docker</li>
+						<img src="./images/u5.png" height="560px">
+					</ul>
+				</section>		
+				</section>
+				<section>
+					<section>
+						<h3>Impementasi Dan Pembahasan</h3>
+						<ul><li>
+							Halaman Utama
+						</li>
+						<img src="./images/i1.png" height="520px">
+					</ul>	
+					</section>
+					<section>
+						<img src="./images/i2.png" height="400px">
+					</section>
+					<section>
+					<ul>
+						<li>Pembahasan</li>
+						<img src="./images/p1.png" height="600px">
+					</ul>	
+					</section>
+				</section>
+				<section>
+					<section>
+					<h3>Kesimpulan Dan Saran</h3>
+					<ul>
+						<li>Kesimpulan</li>
+						<img src="./images/k1.png" height="550px" width="600px">
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>Saran</li>
+						<img src="./images/k2.png" height="300px">
+					</ul>
+				</section>
+				</section>
+				</section>
+				<section>
+					<h3>Demo</h3>
+				</section>
+				<section>
+					<section>
+					<h2>Dockerize microservices</h2>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+							<ul>
+								<li>docker pull < nama_images ></li>
+								<li>docker run -i -t < images_id ></li>
+								<li>docker run -it -v /home/heriipurnama:/host -p 5000:3000 < nama_images ></li>
+								<li>docker commit < id_container > < nama_images:tag ></li>
+							</ul>
+					</blockquote>
+					</section>
+						<section>
+					<h4>Deploy & Running Docker Images : docker hub</h4>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+							<ul>
+								<li>docker push < nama_images:tag ></li>
+								<li>docker search < nama_images ></li>
+								<li>docker pull < nama_images:tag ></li>
+							</ul>
+					</blockquote>
+					</section>
+				</section>
+				<section>
+					<h2>Dockerize microservice</h2>
+					<img src="./images/docker.png">
+				</section>
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="http://www.github.com/heriipurnama">www.github.com/heriipurnama</a> <br>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
